@@ -1,0 +1,72 @@
+.logo {
+    width: 90px;
+}
+
+button[type="submit"]{
+    width: fit-content;
+}
+
+section {
+    padding-top: 3rem;
+}
+
+#pres article {
+    margin-bottom: 1.5rem;
+}
+
+#main-img {
+    position: relative;
+}
+
+#main-img:hover img {
+    filter: brightness(0.5);
+}
+#main-img:hover::after {
+    content: '+';
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider img {
+    filter: grayscale(1);
+}
+
+.slider img:hover {
+    filter: grayscale(0);
+}
+
+
+#infos .infos-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#infos .infos-card {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid black;
+}
+
+#infos .infos-card hr {
+    width: 40%;
+}
+
+@media all and (max-width: 992px){
+    #infos .infos-grid {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slider img {
+        filter: grayscale(0);
+    }
+}
