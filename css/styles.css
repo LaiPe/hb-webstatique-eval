@@ -60,6 +60,10 @@ section {
     width: 40%;
 }
 
+footer {
+    border-top: 2px solid black;
+}
+
 @media all and (max-width: 992px){
     #infos .infos-grid {
         grid-template-rows: repeat(5, 1fr);
